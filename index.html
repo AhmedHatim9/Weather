@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+
+    <!-- Links -->
+     <link rel="shortcut icon" href="./assets(3)/asset0.png" type="image/x-icon">
+     <link rel="stylesheet" href="./css/all.min.css">
+     <link rel="stylesheet" href="./css/bootstrap.min.css">
+     <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+  <main>
+                  <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top z-2">
+      <div class="container">
+        <a class="navbar-brand text-white position-relative" href="#">
+          <img src="./assets(3)/asset0.png" alt="Logo" class="w-25 h-25 align-baseline">
+          <div class="title"><h1 class="f-16">Weather</h1><span class="f-10">tagline goes here</span></div>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa-solid fa-bars" ></i>
+        </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item p-lg-2">
+                <a class="nav-link f-14 active " aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item p-lg-2">
+                <a class="nav-link f-14 " href="#News">News</a>
+              </li>
+              <li class="nav-item p-lg-2">
+                <a class="nav-link f-14 " href="#">Live Cameras</a>
+              </li>
+              <li class="nav-item p-lg-2">
+                <a class="nav-link f-14 " href="#">Photos</a>
+              </li>
+              <li class="nav-item p-lg-2">
+                <a class="nav-link f-14 " href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+      </div>   
+    </nav>
+          
+    <section>
+      <!-- Search -->
+      <div class="container">
+        <div class=" m-y col-12 mx-auto">
+          <div class="inner mx-auto bg-color w-100 d-flex justify-content-between p-2 rounded-5">
+              <input id="searchInput" type="text" class="form-control w-100 d-inline-block border-0 shadow-none bg-color text-white"
+                  placeholder="Find your location..." />
+              <button id="searchBtn" class="btn btn-info text-white rounded-5 px-4 py-2">Find</button>
+          </div>
+        </div>
+      </div>
+                  <!-- Cards -->
+
+      <div class="container my-5 text-center">
+        <i id="loadingSpinner" class="fa-regular fa-snowflake fa-spin fs-1 text-info"></i>
+        <div class="row gap-lg-5 justify-content-center text-white" id="rowData">
+            <div id="currentDay" class="weather-info col-10 col-lg-4 text-center rounded-5 py-5 my-5">
+                <header class="text-white mb-3 p-2">
+                    <p class="fs-4 bg-black bg-opacity-75 rounded-5 py-2"></p>
+                </header>
+                <h2 class="fs-1 fw-bold mb-4"></h2>
+                <h3 class="fs-1 fw-bold"></h3>
+                <div class="condition d-flex align-items-center justify-content-center pe-5">
+                    <img src="" alt="condition icon" />
+                    <h5 class="text-primary fw-bold fs-3"></h5>
+                </div>
+                <footer class="text-black d-flex justify-content-around py-3 fw-bold">
+                    <i class="fa-solid fa-umbrella"> <span id="rainP"></span>%</i>
+                    <i class="fa-solid fa-wind"> <span id="wSpeed"></span> KM/h</i>
+                    <i class="fa-solid fa-compass"> <span id="wDir"></span> </i>
+                </footer>
+            </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="mx-auto bg-foot">
+    <div class="container ">
+      <div class="row ">
+        <div class=" m-y col-lg-6 px-5">
+          <div class="inner mx-auto bg-color w-100 d-flex justify-content-between p-2 rounded-5">
+              <input id="searchInput" type="text" class="form-control w-100 d-inline-block border-0 shadow-none bg-color text-white"
+                  placeholder="Enter your email to subscribe..." />
+              <button id="searchBtn" class="btn btn-info text-white rounded-5 px-4 py-2">Subscribe</button>
+          </div>
+        </div>
+        <div class="mt-4 col-lg-6 d-flex align-items-end px-5">
+          <a href=""><i class="fa-brands fa-facebook-f my-social m-1 p-3 fs-5 color" ></i></a>
+          <a href=""><i class="fa-brands my-social m-1 p-3 fs-5 color fa-twitter" ></i></a>
+          <a href=""><i class="fa-brands fa-google my-social m-1 p-3 fs-5 color" ></i></a>
+          <a href=""><i class="fa-brands fa-pinterest my-social m-1 p-3 fs-5 color" ></i></a>
+        </div>
+      </div>
+      <div class="container">
+        <div class="col-11 my-4 mx-auto">
+          <p class="footer-f-14">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>
